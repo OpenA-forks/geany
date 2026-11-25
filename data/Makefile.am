@@ -55,6 +55,7 @@ filetypes_dist = \
 	filedefs/filetypes.ada \
 	filedefs/filetypes.Arduino.conf \
 	filedefs/filetypes.asciidoc \
+	filedefs/filetypes.ASL.conf \
 	filedefs/filetypes.asm \
 	filedefs/filetypes.autoit \
 	filedefs/filetypes.batch \
