@@ -1353,6 +1353,24 @@ static TMParserMapGroup group_SINEX[] = {
 	{N_("Blocks"), TM_ICON_CLASS, tm_tag_namespace_t},
 };
 
+static TMParserMapEntry map_ASL[] = {
+	{'d', tm_tag_struct_t},    // Device
+	{'s', tm_tag_namespace_t}, // Scope
+	{'f', tm_tag_member_t},    // Field
+	{'m', tm_tag_function_t},  // Method
+	{'n', tm_tag_variable_t},  // Name
+	{'o', tm_tag_class_t},     // Objects
+	{'u', tm_tag_other_t},     // Deprications
+};
+static TMParserMapGroup group_ASL[] = {
+	{N_("Entities"),   TM_ICON_STRUCT,    tm_tag_struct_t},
+	{N_("Blocks"),     TM_ICON_NAMESPACE, tm_tag_namespace_t},
+	{N_("Fields"),     TM_ICON_MEMBER,    tm_tag_member_t},
+	{N_("Methods"),    TM_ICON_METHOD,    tm_tag_function_t},
+	{N_("Variables"),  TM_ICON_VAR,       tm_tag_variable_t},
+	{N_("Regions"),    TM_ICON_CLASS,     tm_tag_class_t},
+	{N_("Unknowns"),   TM_ICON_OTHER,     tm_tag_other_t},
+};
 
 typedef struct
 {
@@ -1376,6 +1394,7 @@ static TMParserMap parser_map[] = {
 	MAP_ENTRY(PYTHON),
 	MAP_ENTRY(LATEX),
 	MAP_ENTRY(BIBTEX),
+	MAP_ENTRY(ASL),
 	MAP_ENTRY(ASM),
 	MAP_ENTRY(CONF),
 	MAP_ENTRY(SQL),
@@ -1944,6 +1963,7 @@ gboolean tm_parser_has_full_scope(TMParserType lang)
 	{
 		/* These parsers include full hierarchy in the tag scope, separated by tm_parser_scope_separator() */
 		case TM_PARSER_ACTIONSCRIPT:
+		case TM_PARSER_ASL:
 		case TM_PARSER_C:
 		case TM_PARSER_CPP:
 		case TM_PARSER_CUDA:

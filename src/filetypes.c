@@ -150,6 +150,7 @@ static void init_builtin_filetypes(void)
 	FT_INIT( D,            D,            "D",                NULL                      );
 	FT_INIT( JAVA,         JAVA,         "Java",             NULL                      );
 	FT_INIT( PASCAL,       PASCAL,       "Pascal",           NULL                      );
+	FT_INIT( ASL,          ASL,          "ASL",              "ACPI Source"             );
 	FT_INIT( ASM,          ASM,          "ASM",              "Assembler"               );
 	FT_INIT( BASIC,        FREEBASIC,    "FreeBasic",        NULL                      );
 	FT_INIT( FORTRAN,      FORTRAN,      "Fortran",          "Fortran (F90)"           );

@@ -54,6 +54,7 @@ parsers = \
 	parsers/abc.c \
 	parsers/ada.c \
 	parsers/asciidoc.c \
+	parsers/asl.c \
 	parsers/asm.c \
 	parsers/autoit.c \
 	parsers/basic.c \

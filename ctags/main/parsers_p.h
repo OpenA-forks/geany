@@ -63,6 +63,7 @@
 	AdaParser, \
 	AntParser, \
 	AsciidocParser, \
+	AslParser, \
 	AsmParser, \
 	AspParser, \
 	AutoconfParser, \

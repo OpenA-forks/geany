@@ -23,6 +23,7 @@
 	PhpParser, \
 	PythonParser, \
 	TexParser, \
+	AslParser, \
 	AsmParser, \
 	IniconfParser, \
 	SqlParser, \
